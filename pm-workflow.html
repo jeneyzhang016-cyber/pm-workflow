@@ -203,8 +203,7 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
   <a href="#s7">八、项目规范沉淀</a>
   <a href="#s8">九、微调四板斧</a>
   <a href="#s9">十、提示词速查</a>
-  <a href="#s10">十一、与原方案的差异</a>
-  <a href="#s11">十二、落地清单</a>
+  <a href="#s11">十一、落地清单</a>
 </nav>
 
 <main>
@@ -705,32 +704,8 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
   </div>
 </section>
 
-<section id="s10">
-  <h2><span class="num">11</span>与原方案（AI IDE 方案）的差异</h2>
-  <p class="sub">方法论可以原样迁移，工具特性有两处不同</p>
-
-  <table>
-    <thead><tr><th style="width:28%">环节</th><th style="width:44%">WorkBuddy 上的情况</th><th style="width:28%">替代度</th></tr></thead>
-    <tbody>
-      <tr><td>截图 / 描述还原高保真页面</td><td class="mid">直接生成项目文件并本地实时预览</td><td><span class="badge ok">完整替代</span></td></tr>
-      <tr><td>Figma 设计稿还原</td><td class="mid">支持接入 MCP，需手动配置并信任</td><td><span class="badge warn">一次性配置</span></td></tr>
-      <tr><td>浏览器自检 / 对照参考站 / 模拟用户</td><td class="mid">内置浏览器自动化，也可挂载 Playwright MCP</td><td><span class="badge ok">完整替代</span></td></tr>
-      <tr><td>classname 精准定位微调</td><td class="mid">同样按 classname 定位并修改代码</td><td><span class="badge ok">完整替代</span></td></tr>
-      <tr><td>更换模型绕开思维定式</td><td class="mid">模型由会话固定，不能按任务切换</td><td><span class="badge warn">部分替代</span></td></tr>
-      <tr><td>重置上下文</td><td class="mid">新开会话即可</td><td><span class="badge ok">完整替代</span></td></tr>
-      <tr><td>本地数据库 + 工具调用 + 后端逻辑</td><td class="mid">可写代码跑服务，也可用云数据库、文件存储、用户认证、免密钥大模型调用托管后端</td><td><span class="badge ok">替代且更强</span></td></tr>
-      <tr><td>md 文档 + mermaid 图</td><td class="mid">产出 md，并能直出 Word、PPT、表格，可沉淀进资料库</td><td><span class="badge ok">替代且更强</span></td></tr>
-      <tr><td>原型交付给老板 / 研发</td><td class="mid">可一键发布为在线分享链接</td><td><span class="badge info">增量能力</span></td></tr>
-      <tr><td>占位配图</td><td class="mid">可直接生成配图，省去取图与链接校验</td><td><span class="badge info">增量能力</span></td></tr>
-    </tbody>
-  </table>
-
-  <h3>交互形态的不同</h3>
-  <p>AI IDE 是「智能体 + 文件树 + 终端」的 IDE 心智，习惯盯着 diff 逐行确认；WorkBuddy 是通用智能体的对话式推进，靠对话和工具调用完成。对非技术背景的产品经理反而更友好，但如果你习惯了逐文件审阅，需要一点适应期。</p>
-</section>
-
 <section id="s11">
-  <h2><span class="num">12</span>落地清单</h2>
+  <h2><span class="num">11</span>落地清单</h2>
   <p class="sub">照着做一遍，这套工作流就是你的了</p>
 
   <h3>一次性准备</h3>
@@ -760,7 +735,7 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
   </div>
 </section>
 
-<footer>用 WorkBuddy 重构产品经理工作流 · 参考自李恒《不止是写代码｜产品经理如何用 TRAE 重构工作流》</footer>
+<footer>用 WorkBuddy 重构产品经理工作流</footer>
 
 </main>
 </div>
