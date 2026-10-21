@@ -199,11 +199,12 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
   <a href="#s4" class="sub">还原 · 校验 · 微调 · 落地</a>
   <a href="#s5">五、场景二 0-1 验证</a>
   <a href="#s6">六、场景三 文档对齐</a>
-  <a href="#s7">七、项目规范沉淀</a>
-  <a href="#s8">八、微调四板斧</a>
-  <a href="#s9">九、提示词速查</a>
-  <a href="#s10">十、与原方案的差异</a>
-  <a href="#s11">十一、落地清单</a>
+  <a href="#skills">七、六大热门 Skills</a>
+  <a href="#s7">八、项目规范沉淀</a>
+  <a href="#s8">九、微调四板斧</a>
+  <a href="#s9">十、提示词速查</a>
+  <a href="#s10">十一、与原方案的差异</a>
+  <a href="#s11">十二、落地清单</a>
 </nav>
 
 <main>
@@ -534,8 +535,97 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
   </div>
 </section>
 
+<section id="skills">
+  <h2><span class="num">07</span>产品经理的 6 大热门 AI Skills</h2>
+  <p class="sub">不是六个工具，是一条从想法到增长的链</p>
+
+  <p>在「说清楚需求 → 生成原型 → 对照校验」这套工作流之外，还有一条从想法到增长的完整链路：<strong>IDEA → PLAN → GROWTH</strong>。产品从 0 到 1 再到持续迭代，方案、需求、拆解、实验、埋点、激活——每个环节都在换文档、换口径、换负责人，判断力因此无法沉淀。而现在，每一段工作流都有一个现成的 Skill 能接住：<strong>上一步的输出，就是下一步的输入</strong>。这条链真正省下的不是时间，而是每一次「重新组织上下文」的损耗。</p>
+
+  <div class="callout">
+    <span class="tag">Skill 与提示词的区别</span>
+    <p>Skill 不是提示词的别名。提示词是一次性的对话：上下文存在你自己脑子里，输出不可复用，换个人就复现不了。Skill 是一份可执行的流程：方法论、提问顺序、输出格式、验收标准全部显式写下来，可反复调用、可版本管理。<strong>Skill 的本质，是把资深产品经理的判断力，写成别人也能跑一遍的流程。</strong></p>
+  </div>
+
+  <h3>三个阶段，六个 Skill</h3>
+  <div class="flow">
+    <div class="node"><b>01 想清楚</b><span>brainstorming · write-a-prd</span></div>
+    <div class="node"><b>02 拆得动</b><span>writing-plans · ab-test-setup</span></div>
+    <div class="node last"><b>03 看得见</b><span>analytics-tracking · onboarding-cro</span></div>
+  </div>
+
+  <h3>Skill 01 · brainstorming — 它不替你决策，它逼你说清楚</h3>
+  <p>方案头脑风暴，作者 obra（superpowers）。用「一次只问一个问题」的节奏，像资深产品顾问一样逐步厘清需求，再主动给出 2-3 个可行方案，并说明推荐哪个、理由是什么。</p>
+  <ul>
+    <li><strong>产出</strong>：含架构、数据流、测试策略的完整设计文档</li>
+    <li><strong>适用场景</strong>：新功能概念评审 · 业务流程再设计 · 高不确定创新项目 · 评审前的自我预演</li>
+  </ul>
+  <p><code>npx skills add obra/superpowers --skill brainstorming</code></p>
+
+  <h3>Skill 02 · write-a-prd — 先访谈，后动笔</h3>
+  <p>需求设计，作者 mattpocock。它是访谈式的：先让你讲清楚问题和想法，再像评审一样对每个设计分支追问到底，直到双方理解一致才动笔。最值钱的设计是<strong>前两段强制用「用户视角」来写</strong>——顺序一反过来，方案自然就收敛了。产出的 PRD 固定六段：问题、方案、用户故事、模块与接口、测试范围、补充说明。</p>
+  <ul>
+    <li><strong>产出</strong>：一份结构严格、可直接作为 GitHub Issue 提交的 PRD</li>
+    <li><strong>适用场景</strong>：需求文档撰写 · 评审前堵住逻辑漏洞 · 减少返工</li>
+  </ul>
+  <p><code>npx skills add mattpocock/skills --skill write-a-prd</code></p>
+
+  <h3>Skill 03 · writing-plans — 把方案拆成 2-5 分钟的步子</h3>
+  <p>实施计划拆分，作者 obra（superpowers）。把设计方案拆成极细颗粒度的执行计划：每步只需 2-5 分钟，带明确的文件路径、命令，和「做完怎么算对」的验收预期。计划文档四件套：功能目标、架构说明、技术栈与文件结构、分步检查清单。</p>
+  <ul>
+    <li><strong>PM 怎么用</strong>：项目分解 · 内容发布计划 · 给研发的工作量评估草稿</li>
+    <li><strong>衔接</strong>：与 brainstorming 无缝衔接——方案确认后直接进入拆解</li>
+  </ul>
+  <p><code>npx skills add obra/superpowers --skill writing-plans</code></p>
+
+  <h3>Skill 04 · ab-test-setup — 一个能用的实验，要先回答 4 件事</h3>
+  <p>A/B 实验设计，作者 coreyhaines31。让实验在统计上站得住：上线前先写死四件事——<strong>假设框架</strong>（预期哪个版本、在哪个指标上、变化多少）、<strong>样本量</strong>（算清楚要跑多少用户，而不是「先跑两天看看」）、<strong>指标选择</strong>（主指标只留一个，其余全当护栏指标）、<strong>停止规则</strong>（什么时候停、看到什么就停，提前写死不许改）。</p>
+  <ul>
+    <li><strong>避开的两个坑</strong>：伪实验（没有对照组、口径不一致）· 早停问题（一看到显著就停，正好撞上随机波动）</li>
+  </ul>
+  <p><code>npx skills add coreyhaines31/marketingskills --skill ab-test-setup</code></p>
+
+  <h3>Skill 05 · analytics-tracking — 为决策埋点，不为收集埋点</h3>
+  <p>数据埋点与追踪，作者 coreyhaines31。建立以决策为导向的数据体系，链路覆盖规范 → 文档 → 配置 → 归因 → 合规。核心主张：埋点最大的浪费不是没埋，而是埋了却回答不了任何一个决策问题——<strong>每一个事件都该能回答「这个数据会改变哪个决定」</strong>。</p>
+  <ul>
+    <li><strong>适用场景</strong>：新功能追踪计划 · 实验事件追踪 · Onboarding 漏斗 · 营销归因 UTM</li>
+  </ul>
+  <p><code>npx skills add coreyhaines31/marketingskills --skill analytics-tracking</code></p>
+
+  <h3>Skill 06 · onboarding-cro — 先找到 Aha 时刻，再设计路径</h3>
+  <p>新用户激活，作者 coreyhaines31。从留存数据反推 Aha 时刻，把 Onboarding 设计成一条尽快抵达第一次成功体验的路径，并搭起配套的多渠道激活运营。它先分析漏斗、找到最大流失节点，再决定在哪一步做实验。关键一问：<strong>「这些留存用户做了哪些动作，而流失用户没有做？」</strong></p>
+  <ul>
+    <li><strong>适用场景</strong>：激活率提升 · 空白状态设计 · 触发式邮件触达 · 激活实验设计</li>
+  </ul>
+  <p><code>npx skills add coreyhaines31/marketingskills --skill onboarding-cro</code></p>
+
+  <h3>六个 Skill，一张表看清</h3>
+  <table>
+    <thead><tr><th style="width:30%">环节 / Skill</th><th style="width:18%">作者</th><th style="width:28%">解决什么问题</th><th>产出物</th></tr></thead>
+    <tbody>
+      <tr><td>01 方案头脑风暴 · brainstorming</td><td class="mid">obra（superpowers）</td><td class="mid">把模糊想法问成清晰方案，并给出有理由的推荐</td><td class="mid">含架构、数据流、测试策略的设计文档</td></tr>
+      <tr><td>02 需求设计 · write-a-prd</td><td class="mid">mattpocock</td><td class="mid">访谈式追问到底，评审前堵住逻辑漏洞</td><td class="mid">可直接作为 GitHub Issue 提交的 PRD</td></tr>
+      <tr><td>03 实施计划拆分 · writing-plans</td><td class="mid">obra（superpowers）</td><td class="mid">把方案拆成 2-5 分钟、带验收预期的微任务</td><td class="mid">含分步检查清单的执行计划</td></tr>
+      <tr><td>04 A/B 实验设计 · ab-test-setup</td><td class="mid">coreyhaines31</td><td class="mid">让实验在统计上站得住，避开伪实验与早停</td><td class="mid">假设 / 样本量 / 指标 / 停止规则齐备的实验方案</td></tr>
+      <tr><td>05 数据埋点与追踪 · analytics-tracking</td><td class="mid">coreyhaines31</td><td class="mid">建立以决策为导向、而非为收集而收集的数据体系</td><td class="mid">事件规范 + 追踪计划 + UTM 归因策略</td></tr>
+      <tr><td>06 新用户激活 · onboarding-cro</td><td class="mid">coreyhaines31</td><td class="mid">找到 Aha 时刻，把激活路径缩到最短</td><td class="mid">Onboarding 路径 + 多渠道触达方案</td></tr>
+    </tbody>
+  </table>
+
+  <h3>怎么装，怎么开始</h3>
+  <ul>
+    <li><strong>命令行安装</strong>：每个 Skill 的 GitHub 地址上面都给了，<code>npx skills add 作者/仓库 --skill 名称</code> 即可，zip 包下载下来也能用。</li>
+    <li><strong>在 WorkBuddy 中使用</strong>：把 SKILL.md 放进 <code>~/.workbuddy/skills/</code>（个人级）或项目的 <code>.workbuddy/skills/</code>（团队共享）即可在对话中直接调用；也可以直接让 WorkBuddy 帮你搜索并安装。</li>
+    <li><strong>建议顺序</strong>：不要六个一起上。<strong>先从 write-a-prd 开始</strong>——挑一个真实的小需求，让它追问你一轮，看产出的 PRD 距离可提交有多远；跑通一个，再扩展到整条链。</li>
+  </ul>
+
+  <div class="callout green">
+    <span class="tag">Takeaway</span>
+    <p>六个 Skill 背后只有三位作者——这不是工具市场，是有人把方法论写成了文件，这件事你也能做。<strong>把判断力写下来，它才会被复制。</strong>工具会换，模型会换，这套「把方法论写成文件」的写法不会。</p>
+  </div>
+</section>
+
 <section id="s7">
-  <h2><span class="num">07</span>项目规范沉淀</h2>
+  <h2><span class="num">08</span>项目规范沉淀</h2>
   <p class="sub">项目达到基础可用状态后，务必做这两件事</p>
 
   <h3>7.1 编写启动脚本</h3>
@@ -556,7 +646,7 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
 </section>
 
 <section id="s8">
-  <h2><span class="num">08</span>微调四板斧</h2>
+  <h2><span class="num">09</span>微调四板斧</h2>
   <p class="sub">当 AI 反复改不好、甚至「嘴硬说改好了」时的处理顺序</p>
 
   <table>
@@ -592,7 +682,7 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
 </section>
 
 <section id="s9">
-  <h2><span class="num">09</span>提示词速查</h2>
+  <h2><span class="num">10</span>提示词速查</h2>
   <p class="sub">自由随性即可，重点是把这三件事说清楚</p>
 
   <table>
@@ -616,7 +706,7 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
 </section>
 
 <section id="s10">
-  <h2><span class="num">10</span>与原方案（AI IDE 方案）的差异</h2>
+  <h2><span class="num">11</span>与原方案（AI IDE 方案）的差异</h2>
   <p class="sub">方法论可以原样迁移，工具特性有两处不同</p>
 
   <table>
@@ -640,7 +730,7 @@ footer{text-align:center;color:var(--text-3);font-size:13px;padding:8px 0 48px}
 </section>
 
 <section id="s11">
-  <h2><span class="num">11</span>落地清单</h2>
+  <h2><span class="num">12</span>落地清单</h2>
   <p class="sub">照着做一遍，这套工作流就是你的了</p>
 
   <h3>一次性准备</h3>
